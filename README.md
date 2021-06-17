@@ -1,2 +1,2 @@
 # Front-End-Mentor-Challenges
-All of my solutions to Front End Montor challenges
+All of my solutions to Front End Mentor challenges
