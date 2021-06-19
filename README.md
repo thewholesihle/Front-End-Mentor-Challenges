@@ -8,13 +8,15 @@ All of my solutions to Front End Mentor challenges
 [![screenshot](./screenshots/screenshot3.png)](https://github.com/trinitysenpai/Front-End-Mentor-Challenges/tree/main/social-proof-section-master)
 
 ### What I learnt
+
 You can use `background-image` with multiple images, like so :
 
 ```css
-background-image: url('image1.png'), url('image2.png');
+background-image: url("image1.png"), url("image2.png");
 ```
 
 You can also use `background-position` in the order of those images, like so :
+
 ```css
 /* puts the first image on the top left and the second image on the bottm right */
 background-position: top left, bottom right;
