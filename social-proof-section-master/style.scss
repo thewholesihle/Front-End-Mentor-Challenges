@@ -1,0 +1,186 @@
+// Spartan Font
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;800;900&display=swap');
+
+//  Primary
+$magenta-dark: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+
+// Neutral
+$dark-grayish-magenta: hsl(303, 10%, 53%);
+$light-grayish-magenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+$font-size: 15px;
+
+@media (min-width: 1250px) {
+
+    html,body {
+        justify-content: center !important;
+        padding: 0 5rem !important;
+    }
+    .testimony-title, .testimony-paragraph, .rate {
+        text-align: left !important;
+        max-width: 520px;
+    }
+
+    .testimony-title {
+        font-size: 46px;
+        font-weight: 700;
+    }
+
+    .about-ratings {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        width: 100% !important;
+        margin-bottom: 4rem;
+
+        .text {
+            max-width: 400px;
+        }
+
+        .rating {
+            font-size: $font-size !important;
+            max-width: 450px !important;     
+            padding: 14px 2rem !important;       
+            flex-direction: row !important;
+            justify-content: center !important;
+            justify-content: space-between !important;
+            .stars {
+                margin-right: 1rem;
+                .star {
+                    margin: 0 5px;
+                }
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-content: space-evenly;
+            }
+        }
+    }
+
+    .rating:nth-of-type(2){
+        margin-left: 2rem !important;
+    }
+
+    .rating:nth-of-type(3){
+        margin-left: 4rem !important;
+    }
+    .buyer-reviews {
+        display: flex;
+        justify-content: space-evenly !important;
+    }
+    .buyer-card {
+        max-width: none !important;
+        margin: 0 1rem !important;
+    }
+}
+
+* {
+    font-family: "Spartan", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-attachment: scroll, fixed;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.testimony-title, .testimony-paragraph, .rate {
+    text-align: center;
+    max-width: 520px;
+}
+
+
+.testimony-title {
+    color: $magenta-dark;
+    margin-top: 3rem;
+}
+
+.testimony-paragraph {
+    margin: 2rem 0;
+    color: $dark-grayish-magenta;
+    font-weight: 500;
+    font-size: $font-size;
+}
+
+.ratings {
+    max-width: 520px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .rating {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        background: $light-grayish-magenta;
+        margin: 1rem 0;
+        padding: 15px;
+        border-radius: 7px;
+    }
+
+    .from {
+        padding-top: 10px;
+        font-weight: 700;
+        color: $magenta-dark;
+    }
+}
+
+.buyer-card {
+    max-width: 520px;
+    font-size: $font-size;
+    padding: 2rem;
+    margin: 1rem 0;
+    background: $magenta-dark;
+    border-radius: 10px;
+    
+    .top {
+        display: flex;
+        align-items: center;
+        line-height: 22px;
+        img {
+            border-radius: 50%;
+            width: 45px;
+            margin-right: 1rem;
+        }
+
+        .name {
+            color: $white;
+            font-weight: 700;
+        }
+
+        .type {
+            color: $soft-pink;
+        }
+    }
+    .review {
+        margin-top: 2rem;
+        color: $white;
+    }
+}
+.attribution {
+    margin-top: 2rem;
+
+    a {
+        color: $magenta-dark;
+    }
+}
+
+// extra stuff 
+.testimony-paragraph::selection, .testimony-title::selection {
+    background: $light-grayish-magenta !important;
+}
