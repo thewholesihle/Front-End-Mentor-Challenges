@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap');
+
+$bg-color: #202124;
+$border-radius: 10px;
+$gap: 15px;
+$card-bg: white;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', cursive;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: $bg-color;
+    color: white;
+    padding: 1rem;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.welcome-paragraph {
+    font-size: 2rem;
+}
+
+.cards {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $gap;
+
+    .card {
+        background: $card-bg;
+        width: 300px;
+        height: 280px;
+        border-radius: $border-radius;
+        overflow: hidden;
+        color: $bg-color;
+        padding-bottom: 2rem;
+        .cover {
+            object-fit: cover;
+            height: 150px;
+        }
+
+        .details {
+            padding: 0 1rem;
+
+            .links {
+                margin-top: 10px;
+                display: flex;
+                gap: $gap;
+                
+                img {
+                    cursor: pointer;
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+
+.card:hover {
+    background: #ebebeb ;
+}
