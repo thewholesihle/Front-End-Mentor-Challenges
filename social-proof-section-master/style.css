@@ -55,6 +55,7 @@
   .buyer-reviews {
     display: flex;
     justify-content: space-evenly !important;
+    align-items: center;
   }
 
   .buyer-card {
