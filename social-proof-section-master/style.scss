@@ -95,8 +95,7 @@ $font-size: 15px;
 
 html, body {
     width: 100%;
-    height: 100%;
-    padding: 0 1rem;
+    height: 110%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,7 +137,8 @@ body {
         flex-direction: column;
         align-items: center !important;
         background: $light-grayish-magenta;
-        margin: 1rem 0;
+        margin: 1rem;
+        text-align: center;
         padding: 15px;
         border-radius: 7px;
     }
@@ -154,7 +154,7 @@ body {
     max-width: 520px;
     font-size: $font-size;
     padding: 2rem;
-    margin: 1rem 0;
+    margin: 1rem 1rem;
     background: $magenta-dark;
     border-radius: 10px;
     
