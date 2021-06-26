@@ -16,7 +16,7 @@
   }
 
   .about-ratings {
-    display: flex !important;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100% !important;
@@ -27,7 +27,7 @@
   }
   .about-ratings .rating {
     font-size: 15px !important;
-    max-width: 450px !important;
+    max-width: 480px !important;
     padding: 14px 2rem !important;
     flex-direction: row !important;
     justify-content: center !important;
@@ -53,22 +53,13 @@
   }
 
   .buyer-reviews {
-    display: flex;
+    flex-direction: row !important;
     justify-content: space-evenly !important;
     align-items: center;
   }
 
   .buyer-card {
     max-width: none !important;
-    margin: 0 1rem !important;
-  }
-
-  .buyer-card:nth-of-type(2) {
-    margin-top: 2rem !important;
-  }
-
-  .buyer-card:nth-of-type(3) {
-    margin-top: 4rem !important;
   }
 }
 * {
@@ -100,7 +91,8 @@ body {
 
 .testimony-title {
   color: #502050;
-  margin-top: 3rem;
+  padding-top: 3rem;
+  margin: 0 1rem;
 }
 
 .testimony-paragraph {
@@ -133,37 +125,44 @@ body {
   color: #502050;
 }
 
-.buyer-card {
+.buyer-reviews {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.buyer-reviews .buyer-card {
   max-width: 520px;
   font-size: 15px;
   padding: 2rem;
-  margin: 1rem 1rem;
+  margin: 0 1rem;
   background: #502050;
-  border-radius: 10px;
+  border-radius: 7px;
 }
-.buyer-card .top {
+.buyer-reviews .buyer-card .top {
   display: flex;
   align-items: center;
   line-height: 22px;
 }
-.buyer-card .top img {
+.buyer-reviews .buyer-card .top img {
   border-radius: 50%;
   width: 45px;
   margin-right: 1rem;
 }
-.buyer-card .top .name {
+.buyer-reviews .buyer-card .top .name {
   color: white;
   font-weight: 700;
 }
-.buyer-card .top .type {
+.buyer-reviews .buyer-card .top .type {
   color: #ee68a4;
 }
-.buyer-card .review {
+.buyer-reviews .buyer-card .review {
   margin-top: 2rem;
   color: white;
 }
 
 .attribution {
+  text-align: center;
   margin-top: 2rem;
 }
 .attribution a {

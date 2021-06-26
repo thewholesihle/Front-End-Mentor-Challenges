@@ -11,6 +11,7 @@ $light-grayish-magenta: hsl(300, 24%, 96%);
 $white: hsl(0, 0%, 100%);
 
 $font-size: 15px;
+$border-radius: 7px;
 
 @media (min-width: 1250px) {
 
@@ -29,7 +30,7 @@ $font-size: 15px;
     }
 
     .about-ratings {
-        display: flex !important;
+        display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100% !important;
@@ -41,7 +42,7 @@ $font-size: 15px;
 
         .rating {
             font-size: $font-size !important;
-            max-width: 450px !important;     
+            max-width: 480px !important;     
             padding: 14px 2rem !important;       
             flex-direction: row !important;
             justify-content: center !important;
@@ -66,22 +67,14 @@ $font-size: 15px;
     .rating:nth-of-type(3){
         margin-left: 4rem !important;
     }
+
     .buyer-reviews {
-        display: flex;
+        flex-direction: row !important;
         justify-content: space-evenly !important;
-        align-items: center
+        align-items: center;
     }
     .buyer-card {
         max-width: none !important;
-        margin: 0 1rem !important;
-    }
-
-    .buyer-card:nth-of-type(2){
-        margin-top: 2rem !important;
-    }
-
-    .buyer-card:nth-of-type(3){
-        margin-top: 4rem !important;
     }
 
 }
@@ -116,7 +109,8 @@ body {
 
 .testimony-title {
     color: $magenta-dark;
-    margin-top: 3rem;
+    padding-top: 3rem;
+    margin: 0 1rem;
 }
 
 .testimony-paragraph {
@@ -141,7 +135,7 @@ body {
         margin: 0 1rem;
         text-align: center;
         padding: 15px;
-        border-radius: 7px;
+        border-radius: $border-radius;
     }
 
     .from {
@@ -151,39 +145,46 @@ body {
     }
 }
 
-.buyer-card {
-    max-width: 520px;
-    font-size: $font-size;
-    padding: 2rem;
-    margin: 1rem 1rem;
-    background: $magenta-dark;
-    border-radius: 10px;
+.buyer-reviews {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    .buyer-card {
+        max-width: 520px;
+        font-size: $font-size;
+        padding: 2rem;
+        margin:0 1rem;
+        background: $magenta-dark;
+        border-radius: $border-radius;
+        
+        .top {
+            display: flex;
+            align-items: center;
+            line-height: 22px;
+            img {
+                border-radius: 50%;
+                width: 45px;
+                margin-right: 1rem;
+            }
     
-    .top {
-        display: flex;
-        align-items: center;
-        line-height: 22px;
-        img {
-            border-radius: 50%;
-            width: 45px;
-            margin-right: 1rem;
+            .name {
+                color: $white;
+                font-weight: 700;
+            }
+    
+            .type {
+                color: $soft-pink;
+            }
         }
-
-        .name {
+        .review {
+            margin-top: 2rem;
             color: $white;
-            font-weight: 700;
         }
-
-        .type {
-            color: $soft-pink;
-        }
-    }
-    .review {
-        margin-top: 2rem;
-        color: $white;
     }
 }
 .attribution {
+    text-align: center;
     margin-top: 2rem;
 
     a {
