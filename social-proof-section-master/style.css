@@ -115,13 +115,14 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  row-gap: 1rem;
 }
 .ratings .rating {
   display: flex;
   flex-direction: column;
   align-items: center !important;
   background: #f7f2f7;
-  margin: 1rem;
+  margin: 0 1rem;
   text-align: center;
   padding: 15px;
   border-radius: 7px;
