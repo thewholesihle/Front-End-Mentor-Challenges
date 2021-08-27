@@ -2,7 +2,7 @@
 
 All of my solutions to Front End Mentor challenges
 
-Check out the [index site](https://frontend-mentor-solutions-wheat.vercel.app)
+Check out the [index site](https://frontend-mentor-solutions-wheat.vercel.app) for all live sites.
 
 
 [![screenshot](./screenshots/screenshot.png)](https://github.com/trinitysenpai/Front-End-Mentor-Challenges/tree/main/3-column-preview-card-component-main)
