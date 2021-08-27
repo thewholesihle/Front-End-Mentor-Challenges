@@ -11,6 +11,8 @@ Check out the [index site](https://frontend-mentor-solutions-wheat.vercel.app) f
 
 [![screenshot](./screenshots/screenshot3.png)](https://github.com/trinitysenpai/Front-End-Mentor-Challenges/tree/main/social-proof-section-master)
 
+[![screenshot](./screenshots/screenshot4.png)](https://github.com/trinitysenpai/Front-End-Mentor-Challenges/tree/main/fylo-data-storage-component-master)
+
 ### What I learnt
 
 You can use `background-image` with multiple images, like so :
