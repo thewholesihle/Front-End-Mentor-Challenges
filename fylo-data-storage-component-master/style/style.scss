@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+// Primary
+$gradient: hsl(6, 100%, 80%), hsl(335, 100%, 65%);
+
+// Neutral
+
+$pale-blue: hsl(243, 100%, 93%);
+$grayish-blue: hsl(229, 7%, 55%);
+$dark-blue: hsl(228, 56%, 26%);
+$very-dark-blue: hsl(229, 57%, 11%);
+
+@media (min-width: 565px) {
+  html, body {
+    background-image: url('../images/bg-desktop.png') !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 2rem !important;
+    background-color: $very-dark-blue;
+    background-position: left 45vh !important;
+    background-size: auto !important;
+  }
+
+  .stats {
+    .used-paragraph {
+      text-align: left !important;
+    }
+  }
+
+  .navigation, .stats {
+    max-width: 650px !important;
+    width: 100%;
+  }
+
+  .navigation {
+    max-width: 300px !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .storage-left {
+    position: absolute;
+    top: -30%;
+    right: 3rem;
+    height: 80px;
+  }
+}
+
+* {
+  user-select: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  background-image: url('../images/bg-mobile.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 400;
+}
+
+.navigation, .stats {
+  min-width: 228px;
+}
+
+.navigation, .stats, .storage-left{
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navigation {
+  background: $dark-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 5px 5rem 5px 5px;
+  padding: 2rem;
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .btn {
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: $very-dark-blue;
+    }
+  }
+}
+
+.stats {
+  padding: 2rem;
+  background: $dark-blue;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  padding-bottom: 4rem;
+
+.used-paragraph {
+  text-align: center;
+}
+  .used-container {
+    display: flex;
+    flex-direction: column;
+
+    .progress-bar-bg {
+      background: $very-dark-blue;
+      height: 20px;
+      width: 100%;
+      border-radius: 8px;
+      overflow-x: clip;
+      display: flex;
+      align-items: left;
+      align-items: center;
+      border: solid 4px $very-dark-blue;
+    }
+
+    .progress-bar {
+      background-image: linear-gradient(90deg, $gradient);
+      height: 100%;
+      width: 80%;
+      padding: 5px 0;
+      border-radius: 8px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .progress-bar::after {
+      content: '';
+      background: white;
+      position: absolute;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      align-self: center;
+      right: 2px;
+    }
+
+    .indicators {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+    }
+  }
+
+  .storage-left {
+    position: absolute;
+    background: white;
+    color: black;
+    font-weight: 700;
+    font-size: 32px;
+    bottom: -20%;
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: center;
+    span {
+      font-size: small !important;
+      color: $grayish-blue;
+    }
+  }
+
+  // creating the triangle (pointy thing for 185gb left)
+  .storage-left::after {
+    content: '';
+    position: absolute;
+    background: red;
+    width: 0px;
+    height: 0px;
+    bottom: -20px;
+    right: 0;
+    background: transparent;
+    border: solid 20px transparent;
+    border-color: white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+
+
+  }
+}
